@@ -1,0 +1,9 @@
+<jxb:bindings xmlns:jxb="https://jakarta.ee/xml/ns/jaxb"
+              xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+              version="3.0">
+    <jxb:bindings schemaLocation="../xsd/estado-copia-schema.xsd" node="/xsd:schema">
+        <jxb:schemaBindings>
+            <jxb:package name="pe.edu.cibertec.dswii.ms.sgb.inventario.WS_SOAP_ms_sgb_inventario.model.estado_copia"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+</jxb:bindings>

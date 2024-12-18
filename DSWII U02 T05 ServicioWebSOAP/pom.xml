@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>pe.edu.cibertec.dswii.ms.sgb.inventario</groupId>
+    <artifactId>WS_SOAP_ms_sgb_inventario</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+        <exec.mainClass>pe.edu.cibertec.dswii.ms.sgb.inventario.ws_soap_ms_sgb_inventario.WS_SOAP_ms_sgb_inventario</exec.mainClass>
+    </properties>
+    <dependencies>
+        <!-- Dependencia para Spring Web Services --> 
+        <dependency> 
+            <groupId>org.springframework.boot</groupId> 
+            <artifactId>spring-boot-starter-web-services</artifactId> 
+            <version>3.3.5</version> 
+        </dependency> 
+ 
+        <!-- Dependencia para JAXB --> 
+        <dependency> 
+            <groupId>org.springframework</groupId> 
+            <artifactId>spring-oxm</artifactId> 
+            <version>6.1.14</version> 
+        </dependency> 
+        
+        <!-- Dependencia para WSDL4J -->
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+            <version>1.6.3</version>
+        </dependency>
+        
+        <!-- Dependencia principal de Jakarta XML Bind API -->
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+    
+        <!-- Runtime de JAXB de Jakarta -->
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+        <!-- Dependencia para JAXB XJC (solo si es necesario para la generación de clases) -->
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-xjc</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+    </dependencies>
+    <build> 
+        <plugins> 
+            <!-- Plugin para JAXB (genera las clases Java desde el XSD) --> 
+            <plugin> 
+                <groupId>org.codehaus.mojo</groupId> 
+                <artifactId>jaxb2-maven-plugin</artifactId> 
+                <version>3.1.0</version> 
+                <executions> 
+                    <execution> 
+                        <goals> 
+                            <goal>xjc</goal> 
+                        </goals> 
+                        <configuration>
+                            <schemaDirectory>${project.basedir}/src/main/xsd</schemaDirectory>
+                            <schemaIncludes>
+                                <include>**/*.xsd</include>
+                            </schemaIncludes>
+                            <bindingDirectory>${project.basedir}/src/main/xjb</bindingDirectory>
+                            <bindingIncludes>
+                                <include>**/*.xjb</include>
+                            </bindingIncludes>
+                            <generateDirectory>${project.build.directory}/generated-sources/jaxb</generateDirectory>
+                        </configuration>
+                    </execution> 
+                </executions> 
+            </plugin> 
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.SoapWebServiceApplication</mainClass>
+                </configuration>
+            </plugin>
+
+        </plugins> 
+    </build> 
+</project>

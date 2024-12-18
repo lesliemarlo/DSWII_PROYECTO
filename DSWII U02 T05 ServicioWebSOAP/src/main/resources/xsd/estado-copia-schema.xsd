@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://pe.edu.cibertec.dswii.ms.sgb.inventario/WS_SOAP_ms_sgb_inventario/estado-copia-service"
+            xmlns="http://pe.edu.cibertec.dswii.ms.sgb.inventario/WS_SOAP_ms_sgb_inventario/estado-copia-service"
+           elementFormDefault="qualified"> 
+
+    <!-- Definir el tipo de EstadoCopia -->
+    <xs:complexType name="EstadoCopia"> 
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="fechaCreacion" type="xs:dateTime"/>
+            <xs:element name="fechaActualizacion" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definir el elemento para la solicitud (Request) -->
+    <xs:element name="GetEstadoCopiaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definir el elemento para la respuesta (Response) -->
+    <xs:element name="GetEstadoCopiaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="estadoCopia" type="EstadoCopia"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

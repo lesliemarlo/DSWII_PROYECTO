@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.12.18 a las 12:20:46 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://pe.edu.cibertec.dswii.ms.sgb.inventario/WS_SOAP_ms_sgb_inventario/copia-service">
+    <schemaBindings map="false">
+      <package name="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.copia_service"/>
+    </schemaBindings>
+    <bindings scd="tns:GetCopiaRequest">
+      <class ref="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.copia_service.GetCopiaRequest"/>
+    </bindings>
+    <bindings scd="tns:GetCopiaResponse">
+      <class ref="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.copia_service.GetCopiaResponse"/>
+    </bindings>
+    <bindings scd="~tns:Copia">
+      <class ref="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.copia_service.Copia"/>
+    </bindings>
+    <bindings scd="~tns:LibroInfo">
+      <class ref="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.copia_service.LibroInfo"/>
+    </bindings>
+    <bindings scd="~tns:EstadoCopia">
+      <class ref="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.copia_service.EstadoCopia"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://pe.edu.cibertec.dswii.ms.sgb.inventario/WS_SOAP_ms_sgb_inventario/estado-copia-service">
+    <schemaBindings map="false">
+      <package name="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.estado_copia_service"/>
+    </schemaBindings>
+    <bindings scd="tns:GetEstadoCopiaRequest">
+      <class ref="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.estado_copia_service.GetEstadoCopiaRequest"/>
+    </bindings>
+    <bindings scd="tns:GetEstadoCopiaResponse">
+      <class ref="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.estado_copia_service.GetEstadoCopiaResponse"/>
+    </bindings>
+    <bindings scd="~tns:EstadoCopia">
+      <class ref="inventario.sgb.ms.dswii.cibertec.edu.pe.ws_soap_ms_sgb_inventario.estado_copia_service.EstadoCopia"/>
+    </bindings>
+  </bindings>
+</bindings>
+

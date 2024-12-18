@@ -1,0 +1,56 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://pe.edu.cibertec.dswii.ms.sgb.inventario/WS_SOAP_ms_sgb_inventario/copia-service"
+           xmlns="http://pe.edu.cibertec.dswii.ms.sgb.inventario/WS_SOAP_ms_sgb_inventario/copia-service"
+           elementFormDefault="qualified">
+
+    <!-- Definir el tipo de LibroInfo (puedes ajustar según su estructura) -->
+    <xs:complexType name="LibroInfo">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="autor" type="xs:string"/>
+            <xs:element name="anioPublicacion" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definir el tipo de EstadoCopia  -->
+    <xs:complexType name="EstadoCopia">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="fechaCreacion" type="xs:dateTime"/>
+            <xs:element name="fechaActualizacion" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definir el tipo de Copia -->
+    <xs:complexType name="Copia"> 
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="libroInfo" type="LibroInfo"/>
+            <xs:element name="codigoBarras" type="xs:string"/>
+            <xs:element name="estadoCopia" type="EstadoCopia"/>
+            <xs:element name="ubicacionFisica" type="xs:string" minOccurs="0"/>
+            <xs:element name="fechaCreacion" type="xs:dateTime"/>
+            <xs:element name="fechaActualizacion" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definir el elemento para la solicitud (Request) -->
+    <xs:element name="GetCopiaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definir el elemento para la respuesta (Response) -->
+    <xs:element name="GetCopiaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copia" type="Copia"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

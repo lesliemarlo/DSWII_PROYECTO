@@ -1,0 +1,16 @@
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\copia\GetCopiaResponse.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\copia\EstadoCopia.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\estado_copia\ObjectFactory.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\estado_copia\package-info.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\copia\package-info.class
+inventario\sgb\ms\dswii\cibertec\edu\pe\ws_soap_ms_sgb_inventario\ws\copia\CopiaEndpoint.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\copia\Copia.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\copia\ObjectFactory.class
+inventario\sgb\ms\dswii\cibertec\edu\pe\ws_soap_ms_sgb_inventario\ws\WebServiceConfig.class
+inventario\sgb\ms\dswii\cibertec\edu\pe\ws_soap_ms_sgb_inventario\ws\estado_copia\EstadoCopiaEndpoint.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\estado_copia\EstadoCopia.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\copia\GetCopiaRequest.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\copia\LibroInfo.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\estado_copia\GetEstadoCopiaResponse.class
+inventario\sgb\ms\dswii\cibertec\edu\pe\ws_soap_ms_sgb_inventario\SoapWebServiceApplication.class
+pe\edu\cibertec\dswii\ms\sgb\inventario\WS_SOAP_ms_sgb_inventario\model\estado_copia\GetEstadoCopiaRequest.class
