@@ -1,0 +1,21 @@
+use ms_ecc_inventario;
+
+INSERT INTO estado_copia (id, nombre, descripcion, fecha_creacion, fecha_actualizacion) VALUES
+(1, 'Disponible', 'La copia está disponible.', '2023-01-15 10:00:00', '2023-01-15 10:00:00'),
+(2, 'Prestado', 'La copia está actualmente prestada.', '2023-01-16 10:00:00', '2023-01-16 10:00:00'),
+(3, 'En reparación', 'La copia está en reparación.', '2023-01-17 10:00:00', '2023-01-17 10:00:00'),
+(4, 'Perdido', 'La copia ha sido reportada como perdida.', '2023-01-18 10:00:00', '2023-01-18 10:00:00'),
+(5, 'Reserva', 'La copia está reservada.', '2023-01-19 10:00:00', '2023-01-19 10:00:00');
+
+
+INSERT INTO Copia (id, codigo_barras, ubicacion_fisica, titulo, isbn, estado_copia_id, fecha_creacion, fecha_actualizacion) VALUES
+(1, '978-3-16-148410-0', 'Estante A1', 'Cien años de soledad', '978-3-16-148410-0', 1, '2023-01-15 10:00:00', '2023-01-15 10:00:00'),
+(2, '978-1-4028-9462-6', 'Estante A2', 'El amor en los tiempos del cólera', '978-1-4028-9462-6', 2, '2023-01-16 10:00:00', '2023-01-16 10:00:00'),
+(3, '978-0-7432-7356-5', 'Estante B1', '1984', '978-0-7432-7356-5', 3, '2023-01-17 10:00:00', '2023-01-17 10:00:00'),
+(4, '978-0-452-28423-4', 'Estante B2', 'Orgullo y prejuicio', '978-0-452-28423-4', 4, '2023-01-18 10:00:00', '2023-01-18 10:00:00'),
+(5, '978-0-06-112008-4', 'Estante C1', 'To Kill a Mockingbird', '978-0-06-112008-4', 5, '2023-01-19 10:00:00', '2023-01-19 10:00:00');
+
+SELECT * FROM ms_ecc_inventario.copia;
+SELECT * FROM ms_ecc_inventario.estado_copia;
+
+-- SHOW TABLES;
