@@ -10,19 +10,49 @@ El objetivo es modelar un sistema de inventario que incluye las siguientes entid
 
 #### 📄 Inventario
 ```java
-class Inventario {
-    int idInventario;
-    String nombre;
-    int cantidad;
-    List<Copia> copias; // Relación con las copias
+public class Inventario {
+    private Long id;
+    private LibroInfo libroInfo; // Información replicada del libro (libroId, tituloLibro, isbnLibro, anioPublicacionLibro)
+    private Integer totalCopias; // Número total de copias físicas disponibles
+    private Integer copiasDisponibles; // Número de copias actualmente disponibles (no prestadas, no dañadas)
+    private LocalDateTime fechaCreacion; // Fecha/hora de creación del registro
+    private LocalDateTime fechaActualizacion; // Última fecha/hora de actualización del registro
+
+    private List<Copia> copias; // Relación con las copias
 }
 ```
 #### 📄 Copia
 ```java
-class Copia {
-    int idCopia;
-    String estadoCopia; // Atributo "EstadoCopia" (Ej: "Disponible", "Reservado", "Dañado")
+public class Copia {
+    private Long id; // Identificador único de la copia física
+    private LibroInfo libroInfo; // Información replicada del libro
+    private String codigoBarras; // Código interno de la copia, identificador único
+    private EstadoCopia estadoCopia; // Relación con el estado actual de la copia
+    private String ubicacionFisica; // Ubicación física de la copia (ej. "Estante A3", "Bodega", etc.)
+    private LocalDateTime fechaCreacion; // Fecha/hora de creación del registro
+    private LocalDateTime fechaActualizacion; // Última fecha/hora de actualización del registro
 }
+```
+#### 📄 Estado copia
+```java
+public class EstadoCopia {
+    private Long id; // Identificador único del estado de la copia
+    private String nombre; // Nombre descriptivo del estado (ej. "DISPONIBLE", "PRESTADA")
+    private String descripcion; // Descripción más extensa del estado
+    private LocalDateTime fechaCreacion; // Fecha/hora de creación del registro
+    private LocalDateTime fechaActualizacion; // Última fecha/hora de actualización del registro
+}
+```
+#### 📄 LibroInfo
+```java
+@Embeddable
+public class LibroInfo {
+    private Long libroId; // Identificador único del libro
+    private String tituloLibro; // Título del libro
+    private String isbnLibro; // ISBN del libro
+    private Integer anioPublicacionLibro; // Año de publicación del libro
+}
+
 ```
 ## 👩‍💻 Temas y responsables
 
