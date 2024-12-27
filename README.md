@@ -75,6 +75,21 @@ Cada link redirigirá a la descarga de su recurso:
 | **Zarela**      | [DSWII U02 T05 ServicioWebSOAP.zip](https://cibertecedu-my.sharepoint.com/:u:/g/personal/i202030255_cibertec_edu_pe/EZYyML3S2sBEumhOndyQlN4B7PKcwTZOFe6QJ6PzfqcLVA?e=IZ0peC)           |
 | **Zarela**      | [DSWII U02 T07 ServicioWebREST](https://cibertecedu-my.sharepoint.com/:u:/g/personal/i202030255_cibertec_edu_pe/EdsguJ40vEhPkad6NpT9i14BaT66cjFmPjuBW1KUdsFBlQ?e=v9Am5l)                 |
 
+
+## 👩‍💻 Equipo de Desarrollo
+
+- **Basty Celia Reyes Espíritu**  
+  - [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/BastyReyes)  
+  - [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/basty-celia-reyes-espiritu-ab4598228/)
+
+- **Leslie Yesenia Marlo Villanueva**  
+  - [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/lesliemarlo)  
+  - [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leslie-yesenia-marlo-villanueva/)
+
+- **Zarela Eugenia Manrique Condori**  
+  - [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/ZarelaMC)  
+  - [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zarelamc/)
+
 # 🚀 Cómo contribuir
 
 ## Paso a paso:
@@ -107,7 +122,4 @@ git add .
 git commit -m "Añade [nombre de tu tema]"
 git push origin [Nombre de tu rama]
 ```
-
-## 🐱‍🐉 Cómo se espera que esté:
-![image](https://github.com/user-attachments/assets/41655d7d-ec4b-46b5-b994-6429053f28d7)
 
