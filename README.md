@@ -1,3 +1,5 @@
+[![YouTube](https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png)](https://youtu.be/nAQf4VeFQDQ?si=7i9ioU0BrvWb4xdX)
+
 # 📦 Gestión de Inventario
 
 Este repositorio contiene varios proyectos desarrollados como parte del curso **DSWII**. Cada proyecto corresponde a un tema del curso y está orientado a implementar conceptos clave como sockets, hilos, serialización y servicios web (SOAP y REST) en el contexto de un sistema de gestión de inventarios.
