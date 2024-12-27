@@ -1,4 +1,11 @@
-[![YouTube](https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png)](https://youtu.be/nAQf4VeFQDQ?si=7i9ioU0BrvWb4xdX)
+# 🚀 Desarrollo de Servicios Web II: Proyecto Final de Gestión de Inventarios 🌐💻
+
+<div align="center">
+
+[![YouTube](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/40px-YouTube_icon_%282013-2017%29.png)](https://youtu.be/nAQf4VeFQDQ?si=7i9ioU0BrvWb4xdX)  
+**[¡Haz clic aquí para ver el video!](https://youtu.be/nAQf4VeFQDQ?si=7i9ioU0BrvWb4xdX)**  
+
+</div>
 
 # 📦 Gestión de Inventario
 
