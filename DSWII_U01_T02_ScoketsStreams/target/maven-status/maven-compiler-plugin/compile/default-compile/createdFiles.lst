@@ -1,0 +1,12 @@
+pe\edu\cibertec\dswii\u01\cliente\transferencia\ClienteTransferenciaMain.class
+pe\edu\cibertec\dswii\u01\t02\model\EstadoCopia.class
+pe\edu\cibertec\dswii\u01\t02\servidor\mensaje\ServidorMensajeMain.class
+pe\edu\cibertec\dswii\u01\cliente\transferencia\ClienteTransferencia.class
+pe\edu\cibertec\dswii\u01\t02\cliente\mensaje\ClienteMensaje.class
+pe\edu\cibertec\dswii\u01\t02\cliente\mensaje\ClienteMensajeMain.class
+pe\edu\cibertec\dswii\u01\t02\model\Copia.class
+pe\edu\cibertec\dswii\u01\t02\model\Inventario.class
+pe\edu\cibertec\dswii\u01\t02\servidor\transferencia\ServidorTransferencia.class
+pe\edu\cibertec\dswii\u01\t02\servidor\mensaje\ServidorMensaje.class
+pe\edu\cibertec\dswii\u01\t02\model\LibroInfo.class
+pe\edu\cibertec\dswii\u01\t02\servidor\transferencia\ServidorTransferenciaMain.class
